@@ -1,0 +1,146 @@
+* {
+	font-family: helvetica, arial, verdana, sans-serif;
+	font-size: 14pt;
+    text-align: center;
+}
+
+a {
+    color: #00f;
+    text-decoration: underline;
+}
+
+.banner a {
+    color: #000;
+    font-weight: 500;
+}
+
+.fieldname {
+    font-weight: bold;
+    font-size: 19px;
+    text-decoration: underline;
+}
+
+.nonulfield {
+    font-size: 20px;
+}
+
+input[type=text] {
+    margin-top: 10px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+select {
+    min-width: 80px;
+}
+
+.status {
+    border: outset 1px black;
+    background-color: #ffffa5;
+}
+
+.error {
+    font-weight: bold;
+    font-style: italic;
+    color:red;
+}
+
+.formheading {
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.logo_bgrd {
+    background-color: #abf;
+    color: #abf;
+}
+
+.logo_bgrd img {
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.subtitle {
+    background-color: #abf;
+    color: #000;
+    font-size: 32px !important;
+    padding-bottom: 10px !important;
+    font-weight:bold;
+}
+
+.banner {
+	color: white;
+	background-color: #00d;
+	padding: 1px 15px 1px 15px;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16pt;
+	display: block;
+}
+
+li a {
+	text-decoration: none;
+}
+
+li a:hover {
+	color: black;
+}
+
+.title {
+	font-family: impact, verdana, sans-serif;
+	font-size: 36pt;
+	float: left;
+}
+
+.subtitle {
+	font-size: 12pt;
+	font-style: italic;
+}
+
+#userbanner {
+	float: right;
+	display: inline;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu ul {
+}
+
+.sadlist {
+    list-style-position: inside;
+}
+
+.menu li {
+	display: inline;
+	padding: 4px 7px;
+    white-space: nowrap;
+	border: 1px solid #666;
+	background: #ddd;
+	color: #0ff;
+	margin-right: 8px;
+	border-radius: 4px;
+	-moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	box-shadow: 2px 2px 2px #777;
+}
+
+.title {
+	font-style: italic;
+	margin-left: 30px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
