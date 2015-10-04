@@ -55,15 +55,14 @@ echo <<< _END
 <form method='POST' action='register.php'>$error
 <span class='fieldname'>Username</span>
 <input type='text' maxlength='16' name='user' value='$user'
-oninput='checkUser(this)'><span id='info'></span><br>
+oninput='checkUser(this)'><br><span id='info'></span><br>
 <span class='fieldname'>Password</span>
 <input type='password' maxlength='16' name='pass' value=''><br/>
 <span class='fieldname'>Weight (lb)</span>
 <input type='text' maxlength='3' name='weight'
-oninput='checkWeight(this)'><span id='weightinfo'></span><br/>
+oninput='checkWeight(this)'><br><span id='weightinfo'></span><br/>
 _END;
 ?>
-        <span class='fieldname'>&nbsp;</span>
         <input type='submit' value="Register">
         </form></div><br>
     </body>
