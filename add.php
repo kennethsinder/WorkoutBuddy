@@ -19,6 +19,9 @@ $calories = 0;
 if (isset($_POST['min']))
 {
     $minutes = (int)sanitize($_POST['min']);
+    if ($minutes < 0 || $minutes > 1000) {
+        die("<br>Minutes must be greater than zero!<br>");
+    }
     $activity = strtolower(sanitize($_POST['activity']));
 
     $result = query("SELECT * FROM exercises WHERE name='$activity'");
@@ -39,9 +42,8 @@ if (isset($_POST['min']))
         {
             die("<hr><span class='error'>ERROR: Weight is undefined!!</span><hr>");
         }
-        if (isset($_SESSION['user'])) {
-            $n = $_SESSION['user'];
-            query("UPDATE members SET calories = calories + $calories WHERE user='$n'");
+        if ($user) {
+            query("UPDATE members SET calories = calories + $calories WHERE user='$user'");
         }
     }
     $minutes = 0;

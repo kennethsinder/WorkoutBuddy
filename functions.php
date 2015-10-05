@@ -66,8 +66,11 @@ function compare($calories)
         }
         echo "<span class='comparison'><li>$percentage% of one $name</li></span>";
     }
-    echo "<br/>If you did the same exercise $selectedFood[0] more times, ".
-        "you could actually burn off one $selectedFood[1], you lazy oaf!</ul><br/>".
-        "<br><br><p><strong>DISCLAIMER</strong>: All values are approximate. This website is for entertainment ".
+    if ($selectedFood[1] > 0)
+    {
+        echo "<br/>If you did the same exercise $selectedFood[0] more times, ".
+            "you could actually burn off one $selectedFood[1], you lazy oaf!</ul><br/>";
+    }
+    echo "<br><br><p><strong>DISCLAIMER</strong>: All values are approximate. This website is for entertainment ".
         "purposes only. It was created by Kenneth Sinder for the TerribleHacks II Hackathon.</p>";
 }

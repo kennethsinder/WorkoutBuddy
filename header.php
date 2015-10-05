@@ -13,6 +13,7 @@ if (!isset($_SESSION))
 require_once 'functions.php';
 
 $loggedin = false;
+$user = '';
 if (isset($_SESSION['user']))
 {
     $user = $_SESSION['user'];
@@ -46,7 +47,7 @@ else
 {
     echo "<li><a href='logout.php'>Logout</a></li>";
 }
-echo "</ul></div><hr>";
+echo "</ul></div>";
     if (isset($_SESSION['user']))
     {
         $name = $_SESSION['user'];
@@ -55,12 +56,12 @@ echo "</ul></div><hr>";
         $pizzacount = $calcount / 2400.0;
         echo "<div class='status'><strong>YOUR SAD PROGRESS</strong>: I am distressed to report you have ".
                 "only burned $pizzacount pizzas' worth of energy so far. ".
-                "(<a href='#'>Refresh</a>)</div><hr>";
+                "(<a href='add.php'>Refresh</a>)</div><hr>";
     }
     else
     {
         echo "<div class='status'><strong>Note</strong>: If you <strong><a href='login.php'>log in</a></strong> or
                 <strong><a href='register.php'>register</a></strong>, you can keep track of your total calories
-                burned (measured in medium pepperoni pizzas!)</div><hr>";
+                burned (measured in medium pepperoni pizzas!)</div>";
     }
 echo "<br/>";
